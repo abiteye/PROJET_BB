@@ -1,0 +1,58 @@
+<?php
+
+    class Chambre implements IApplication{
+
+        protected $numero;
+        protected $numDep;
+        protected $type;
+
+
+        //Le constructeur
+
+        public function __construct($row=null){
+
+            if($row!=null){
+                $this->hydrate($row);
+            }
+
+        }
+
+        public function hydrate($row){
+
+            $this->numero= $row['numero'];
+            $this->numDep= $row['numDep'];
+            $this->type=   $row['type'];
+               
+        }
+
+        public function getNumero(){
+
+            return $this->numero;
+        }
+
+        public function getNumDep(){
+
+            return $this->numDep;
+        }
+
+        public function getType(){
+
+            return $this->type;
+        }
+
+        //les setters
+        public function setNumero($numero){
+
+            $this->numero=$numero;
+        }
+
+        public function setNumDep($numDep){
+
+            $this->numDep=$numDep;
+        }
+
+        public function setType($type){
+
+            $this->type=$type;
+        }
+    }

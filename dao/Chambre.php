@@ -6,18 +6,19 @@
         public function __construct(){
 
             $this->tableName='chambre';
-            $this->className='Chambre';
+            $this->className='chambre';
         }
 
-        public function addChambre($obj){
+        public function add($obj){
             
-        }
-
-        public function setChambre($obj){
 
         }
 
-        public function deleteChambre($numero){
+        public function update($obj){
+
+        }
+
+        public function delete($numero){
 
         }
     }

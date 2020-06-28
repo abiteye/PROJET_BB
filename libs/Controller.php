@@ -1,6 +1,7 @@
 <?php
 
 class Controller{
+  
     protected $layout;
     protected $view;
     protected $folder;

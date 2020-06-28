@@ -13,7 +13,7 @@
                     <tbody id="tbody">
 
                         <?php
-                            foreach (@$chambre as $key=>$value){
+                     /*       foreach (@$chambre as $key=>$value){
                         ?>
 
                                 <tr class="text-center">
@@ -26,7 +26,7 @@
                                 </tr>
 
                             <?php
-                            }
+                            }*/
                             ?>
 
                         

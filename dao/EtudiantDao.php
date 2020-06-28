@@ -1,6 +1,6 @@
 <?php
 
-    class EtudiantDao extends Manager{
+    class EtudiantDao  extends Manager {
 
 
         public function __construct(){
@@ -9,16 +9,23 @@
             $this->className='Etudiant';
         }
 
-        public function addEtudiant($obj){
+        public function add($obj){
 
         }
 
-        public function setEtudiant($id){
+        public function getEtudiant(){
+
+            return $this->findAll();
 
         }
-        public function deleteEtudiant($id){
+
+        public function upddate($id){
 
         }
+       
+
+        
+        
         
         
     }

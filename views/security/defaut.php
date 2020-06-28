@@ -4,52 +4,46 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="text-center">
+                            <th>Matricule</th>
                             <th>Prénom</th>
                             <th>Nom</th>
                             <th>Téléphone</th>
                         </tr>
                     </thead>
                     <tbody id="tbody">
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>Etudiant 1</td>
-                            <td>Etudiant 1</td>
-                            <td>000000000</td>
-                        </tr>
+                        
+        <?php
+        /*    foreach($etudiant as $value){
+        ?>
+
+                <tr class="text-center">
+                    <td><?= $value->getPrenom(); ?></td>
+                    <td><?= $value->getNom(); ?></td>
+                    <td><?= $value->geTelephone(); ?></td>
+                    <td>Modifier</td>
+                    <td><input type="hidden" value="<?=$value->getId();?>"></td>
+                </tr>
+
+        <?php
+        }*/
+        ?>
                     </tbody>
                 </table>
-            </div>
+</div>
+<div class="col-6 m-auto">
+    <nav aria-label="...">
+        <ul class="pagination text-success">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Précédent</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Suivant</a>
+            </li>
+        </ul>
+    </nav>            
+</div>

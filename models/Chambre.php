@@ -2,6 +2,7 @@
 
     class Chambre implements IApplication{
 
+        protected $id_chambre;
         protected $numero;
         protected $numDep;
         protected $type;
@@ -19,12 +20,18 @@
 
         public function hydrate($row){
 
+            $this->id_chambre= $row['id_chambre'];
             $this->numero= $row['numero'];
             $this->numDep= $row['numDep'];
             $this->type=   $row['type'];
                
         }
 
+        public function getIdChambre(){
+
+            return $this->id_chambre;
+        }
+        
         public function getNumero(){
 
             return $this->numero;
@@ -41,6 +48,11 @@
         }
 
         //les setters
+        public function setIdChambre($id_chambre){
+
+            $this->id_chambre=$id_chambre;
+        }
+
         public function setNumero($numero){
 
             $this->numero=$numero;

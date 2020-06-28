@@ -16,8 +16,10 @@ class Router{
                 }elseif(file_exists($pathDao)){
                     require_once($pathDao); 
                 }elseif(file_exists( $pathLibs)){
+
                  require_once( $pathLibs); 
-             }     
+                 
+                }     
              });
 
 

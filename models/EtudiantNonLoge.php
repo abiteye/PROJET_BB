@@ -1,6 +1,6 @@
 <?php
 
-    class EtudiantNonLoge extends EtudiantBoursier{
+    class EtudiantNonLoge extends Etudiant{
 
         protected $montant;
 

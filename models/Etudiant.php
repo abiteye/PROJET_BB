@@ -25,9 +25,10 @@
 
         public function hydrate($row){
 
-            $this->id= $row['id'];
+            //$this->id= $row['id'];
             $this->matricule= $row['matricule'];
             $this->prenom=     $row['prenom'];
+            $this->nom=     $row['nom'];
             $this->nom= $row['telephone'];
                
            

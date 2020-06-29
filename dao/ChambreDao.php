@@ -7,7 +7,7 @@
 
             $this->tableName='chambre';
             $this->className='Chambre';
-            $this->colonne='id_chambre';
+            $this->colonne='id';
         }
 
         public function add($obj){
@@ -32,13 +32,6 @@
 
         }
         public function select(){
-            $sql = "select * from Chambre";
-
-            $data = $this->executeSelect($sql);
-            echo '<pre>';
-            //var_dump($data);
-            echo '</pre>';
-
-            
+           
         }
     }

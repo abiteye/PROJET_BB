@@ -44,7 +44,7 @@
 
             $this->render();
         }
-        
+
         public function GestionChambre(){
             $this->view="gestionChambre";
             
@@ -75,14 +75,13 @@
                             'type' => $type
                         ];
                         $chambre = new Chambre($row);
-                        //var_dump($chambre);
-                        //die();
-
+                       
                         $result= $this->dao->add($chambre);
                         if($result!=1){
                           echo "l'insetion a echoué";
                         }else{
-                          echo "l'ajout est fait avec succes";
+                            $this->index();
+                          //echo "l'ajout est fait avec succes";
                         }
 
                         

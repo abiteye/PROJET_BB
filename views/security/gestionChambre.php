@@ -12,23 +12,22 @@
                     </thead>
                     <tbody id="tbody">
 
-                        <?php
-                     /*       foreach (@$chambre as $key=>$value){
-                        ?>
+                    <?php
+            foreach(@$etudiant as $key => $value){
+            ?>
 
-                                <tr class="text-center">
-                                    <td><?= $value->getnumCham(); ?></td>
-                                    <td><?= $value->getNumDep(); ?></td>
-                                    <td><?= $value->getType(); ?></td>
-                                    <td>Modifier</td>
-                                    <td><input type="hidden" value="<?=$value->getidCham();?>">
-                                        <img src="<?=BASE_URL?>/public/images/ic-supprimer.png" alt="" id="supprimer"></td>
-                                </tr>
+                <tr class="text-center">
+                    <td><?= $value->getMatricule(); ?></td>
+                    <td><?= $value->getPrenom(); ?></td>
+                    <td><?= $value->getNom(); ?></td>
+                    <td><?= $value->getTelephone(); ?></td>
+                    <td><button type="button" class="btn btn-outline-primary"id="mdf">Modify</button></td>
+                    <td><input type="hidden" value="<?=$value->getId();?>"></td>
+                </tr>
 
-                            <?php
-                            }*/
-                            ?>
-
+            <?php
+            }
+            ?>
                         
 
                     </tbody>

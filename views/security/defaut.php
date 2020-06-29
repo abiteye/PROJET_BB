@@ -11,28 +11,27 @@
                         </tr>
                     </thead>
                     <tbody id="tbody">
-                        
-        <?php
-        /*    foreach($etudiant as $value){
-        ?>
+            <?php
+            foreach(@$etudiant as $key => $value){
+            ?>
 
                 <tr class="text-center">
-                    <td><?= $value->getPrenom(); ?></td>
-                    <td><?= $value->getNom(); ?></td>
-                    <td><?= $value->geTelephone(); ?></td>
-                    <td>Modifier</td>
+                    <td><?= $value->getMatricule();?></td>
+                    <td><?= $value->getPrenom();?></td>
+                    <td><?= $value->getNom();?></td>
+                    <td><?= $value->getTelephone();?></td>
                     <td><input type="hidden" value="<?=$value->getId();?>"></td>
                 </tr>
 
-        <?php
-        }*/
-        ?>
+            <?php
+            }
+            ?>
                     </tbody>
                 </table>
 </div>
 <div class="col-6 m-auto">
     <nav aria-label="...">
-        <ul class="pagination text-success">
+        <ul class="pagination">
             <li class="page-item disabled">
                 <a class="page-link" href="#" tabindex="-1">Précédent</a>
             </li>

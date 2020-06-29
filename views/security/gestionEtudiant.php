@@ -3,12 +3,7 @@
         <article class="col-md">
             <div class="rechercher">
                 <label for="rechercher" class="rechercher_label">Rechercher</label>
-                <select name="type" id="type">
-                    <option value="" selected></option>
-                    <option name="matricule" value="matricule" id="matricule">Matricule</option>
-                    <option name="bourse" value="bouse" id="bourse">Boursier</option>
-                    <option name="departement" value="departement" id="departement">Département</option>
-                </select>
+                <input type="text" class="form-control" id="recherche" placeholder="Search..">
             </div>
         </article>
 
@@ -25,7 +20,7 @@
                     </thead>
                     <tbody id="tbody">
                         
-                    <?php
+            <?php
             foreach(@$etudiant as $key => $value){
             ?>
 
@@ -61,4 +56,17 @@
                         </li>
                     </ul>
                 </nav>            
-            </div>            
+            </div>   
+            
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>            
+<script>
+$(document).ready(function(){
+
+  $("#recherche").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#tbody tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
